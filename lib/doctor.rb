@@ -12,7 +12,7 @@ class Doctor
     appointment.doctor = self
   end
 
-  def appointment
+  def appointments
     @appointments
   end
 
