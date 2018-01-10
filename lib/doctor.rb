@@ -7,5 +7,17 @@ class Doctor
     @appointments = []
   end
 
-  
+  def add_appointment(appointment)
+    @appointments << appointment
+    appointment.doctor = self
+  end
+
+  def appointment
+    @appointments
+  end
+
+  def patients
+    self.appointments.collect {|appointment| appointment.patient}
+  end
+
 end
